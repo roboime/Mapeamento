@@ -1,0 +1,24 @@
+Criar a nuvem de pontos com o map Anything (rodar um em cada terminal)
+
+ros2 launch rtabmap_launch rtabmap.launch.py \
+    rtabmap_args:="--delete_db_on_start --Vis/MinInliers 10 --Mem/IncrementalMemory true" \
+    rgb_topic:=/image_raw \
+    depth_topic:=/camera/depth_registered \
+    camera_info_topic:=/camera_info \
+    frame_id:=default_cam \
+    approx_sync:=true \
+    approx_sync_max_interval:=0.8 \
+    topic_queue_size:=100 \
+    sync_queue_size:=100 \
+    wait_imu_to_init:=false \
+    qos:=1 \
+    visual_odometry:=true
+
+
+python3 map_node.py
+
+
+ros2 run usb_cam usb_cam_node_exe --ros-args     -p video_device:=/dev/video0     -p pixel_format:="mjpeg2rgb"     -p camera_info_url:="file:///home/roboime/dev/rtab/camera.yaml"     -p frame_id:=default_cam
+
+
+

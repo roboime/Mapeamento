@@ -1,0 +1,90 @@
+%YAML:1.0
+
+
+
+Camera.type: "PinHole"
+
+
+
+# Intrinsics (ESCALONADOS PARA 1920x1080)
+
+Camera.fx: 1432.1804
+
+Camera.fy: 1086.2319
+
+Camera.cx: 941.8106
+
+Camera.cy: 544.9702
+
+
+
+# Distortion (OpenCV: k1 k2 p1 p2 k3) - Estes não mudam
+
+Camera.k1: -0.118258776
+
+Camera.k2: 1.90542204
+
+Camera.p1: -0.000412611142
+
+Camera.p2: -0.00471921791
+
+Camera.k3: -5.64392974
+
+
+
+# Image size - ATUALIZADOS PARA 1080p
+
+Camera.width: 1920
+
+Camera.height: 1080
+
+
+
+Camera.fps: 30
+
+Camera.RGB: 1
+
+
+
+# ORB
+
+ORBextractor.nFeatures: 1200
+
+ORBextractor.scaleFactor: 1.2
+
+ORBextractor.nLevels: 8
+
+ORBextractor.iniThFAST: 20
+
+ORBextractor.minThFAST: 7
+
+
+
+# Não mexe
+
+Stereo.ThDepth: 40.0
+
+Stereo.b: 0.0
+
+
+
+Viewer.KeyFrameSize: 0.06
+
+Viewer.KeyFrameLineWidth: 1
+
+Viewer.GraphLineWidth: 0.9
+
+Viewer.PointSize: 2
+
+Viewer.CameraSize: 0.08
+
+Viewer.CameraLineWidth: 3
+
+Viewer.ViewpointX: 0
+
+Viewer.ViewpointY: -0.7
+
+Viewer.ViewpointZ: -1.8
+
+Viewer.ViewpointF: 500
+
