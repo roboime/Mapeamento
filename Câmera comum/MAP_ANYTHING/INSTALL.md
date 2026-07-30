@@ -16,3 +16,7 @@ cd map-anything
 pip install -e .
 pip install torch torchvision numpy
 ```
+```bash
+python3 map_node.py
+```
+OBS: Nesse ultimo comando tem que verificar se está na mesma pasta onde está o map_node
