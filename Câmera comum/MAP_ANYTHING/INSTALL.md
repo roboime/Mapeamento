@@ -20,3 +20,5 @@ pip install torch torchvision numpy
 python3 map_node.py
 ```
 OBS: Nesse ultimo comando tem que verificar se está na mesma pasta onde está o map_node
+
+ros2 launch rtabmap_launch rtabmap.launch.py     rtabmap_args:="--delete_db_on_start --Vis/MinInliers 10 --Mem/IncrementalMemory true"     rgb_topic:=/camera/rgb_local     depth_topic:=/camera/depth_registered     camera_info_topic:=/camera_info     frame_id:=camera_optical_frame     approx_sync:=true     approx_sync_max_interval:=0.2     wait_imu_to_init:=false     qos:=1     visual_odometry:=true
